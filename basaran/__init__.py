@@ -14,7 +14,7 @@ def is_true(value):
 # bigscience/bloomz-560m was chosen as the default model because it is
 # multilingual and requires less than 8GB of memory for inference.
 MODEL = os.getenv("MODEL", "bigscience/bloomz-560m")
-HOST = os.getenv("HOST", "0.0.0.0")
+HOST = os.getenv("HOST", "127.0.0.1")
 PORT = int(os.getenv("PORT", "80"))
 
 # Model-related arguments:
