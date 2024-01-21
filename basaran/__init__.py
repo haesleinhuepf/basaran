@@ -19,7 +19,7 @@ PORT = int(os.getenv("PORT", "80"))
 
 # Model-related arguments:
 MODEL_REVISION = os.getenv("MODEL_REVISION", "")
-MODEL_CACHE_DIR = os.getenv("MODEL_CACHE_DIR", "models")
+MODEL_CACHE_DIR = os.getenv("MODEL_CACHE_DIR", None)
 MODEL_LOAD_IN_8BIT = is_true(os.getenv("MODEL_LOAD_IN_8BIT", ""))
 MODEL_LOAD_IN_4BIT = is_true(os.getenv("MODEL_LOAD_IN_4BIT", ""))
 MODEL_LOCAL_FILES_ONLY = is_true(os.getenv("MODEL_LOCAL_FILES_ONLY", ""))
